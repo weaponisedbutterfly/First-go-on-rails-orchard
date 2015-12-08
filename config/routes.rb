@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+
+  get '/welcome', to: 'home#welcome'
+
+  get '/products', to: 'home#products'
+
+  get '/products/macbooks', to: 'products#macbooks'
+
+  get '/products/apple_watch', to: 'products#apple_watch'
+
+  get '/products/imacs', to: 'products#imacs'
+
+  get '/products/iPads', to: 'products#iPads'
+
+  get '/products/iPhones', to: 'products#iPhones'
+
+  root to: 'home#welcome'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
